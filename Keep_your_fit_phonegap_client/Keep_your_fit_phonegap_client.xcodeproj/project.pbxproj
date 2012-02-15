@@ -35,6 +35,7 @@
 		D88F235E14EB8A5E00B7ACD5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D88F235D14EB8A5E00B7ACD5 /* AppDelegate.m */; };
 		D88F236114EB8A5E00B7ACD5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88F236014EB8A5E00B7ACD5 /* MainViewController.m */; };
 		D88F236314EB8A5E00B7ACD5 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D88F236214EB8A5E00B7ACD5 /* MainViewController.xib */; };
+		D88F23D014EB921000B7ACD5 /* www in Resources */ = {isa = PBXBuildFile; fileRef = D88F23CF14EB921000B7ACD5 /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		D88F236014EB8A5E00B7ACD5 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
 		D88F236214EB8A5E00B7ACD5 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		D88F236514EB8A5E00B7ACD5 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		D88F23CF14EB921000B7ACD5 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		D88F230B14EB8A5E00B7ACD5 = {
 			isa = PBXGroup;
 			children = (
+				D88F23CF14EB921000B7ACD5 /* www */,
 				D88F233714EB8A5E00B7ACD5 /* Keep_your_fit_phonegap_client */,
 				D88F231C14EB8A5E00B7ACD5 /* Frameworks */,
 				D88F231A14EB8A5E00B7ACD5 /* Products */,
@@ -296,6 +299,7 @@
 				D88F235814EB8A5E00B7ACD5 /* Capture.bundle in Resources */,
 				D88F235A14EB8A5E00B7ACD5 /* PhoneGap.plist in Resources */,
 				D88F236314EB8A5E00B7ACD5 /* MainViewController.xib in Resources */,
+				D88F23D014EB921000B7ACD5 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +485,7 @@
 				D88F236A14EB8A5E00B7ACD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
