@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Keep_your_fit_phonegap_client' target in the 'Keep_your_fit_phonegap_client' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
