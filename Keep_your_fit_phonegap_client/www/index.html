@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
 	<meta charset="utf-8">
 
+    <link rel="stylesheet" href="css/jquery.mobile-1.0.1.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
 
-	<!-- iPad/iPhone specific css below, add after your main css >
-	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />
 	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />
-	-->
+
 	<!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
-	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+
+    <script type="text/javascript" src="javascript/external/jQuery.js"></script>
+    <script type="text/javascript" src="javascript/external/jquery.mobile-1.0.1.js"></script>
 	<script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
 
 
@@ -56,13 +56,32 @@
     </script>
   </head>
   <body onload="onBodyLoad()">
-	<div data-role="page">
-		<div data-role="header">
-			<h1>My Title</h1>
-		</div>
-		<div data-role="content">
-			<p>Hello World</p>
-		</div>
-	</div>
+      <div data-role="page">
+
+          <div data-role="header">
+              <h1>Keep Your fit</h1>
+              <a href="register.html" data-role="button" data-icon="add" data-transition="flip" class="ui-btn-right">注册</a>
+          </div><!-- /header -->
+
+          <div data-role="content">
+              <div data-role="content">
+                  <fieldset class="ui-grid-a">
+                      <form action="" method="post">
+                          <div data-role="fieldcontain" class="ui-hide-label">
+                              <input type="text" name="email" id="email" value="" placeholder="邮 箱"/>
+                          </div>
+                          <div data-role="fieldcontain" class="ui-hide-label">
+                              <input type="password" name="password" id="password" value="" placeholder="密 码"/>
+                          </div>
+                          <div id="button_div">
+                              <button type="submit" data-theme="a">登录</button>
+                              <button type="reset" data-theme="a">重置</button>
+                          </div>
+                      </form>
+                  </fieldset>
+              </div><!-- /content -->
+          </div><!-- /content -->
+
+      </div><!-- /page -->
   </body>
 </html>
