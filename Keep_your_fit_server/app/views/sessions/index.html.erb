@@ -1,9 +1,26 @@
-<div data-role="header" id="page_title">
-  <h1>Keep Your Fit</h1>
-
-</div><!-- /header -->
+<div data-role="header" data-nobackbtn="true" id="page_title">
+    <h1>Keep Your Fit</h1>
+    <%= link_to "注册", register_path, :"data-transition" => "flip" %>
+</div>
 
 <div data-role="content">
-<p>Hello world</p>
-</div><!-- /content -->
+    <%= form_for @user do |f|%>
+      <div data-role="fieldcontain">
+        <%=  f.text_field :email, :placeholder => "邮箱" %>
+        <!--<input type="text" name="email" value="" id="email" placeholder="邮箱" />-->
+      </div>
+    <%= end %>
+    <form id="" method="post">
+        <div data-role="fieldcontain">
+          <input type="text" name="email" value="" id="email" placeholder="邮箱" />
+        </div>
+        <div data-role="fieldcontain">
+          <input type="password" name="password" id="password" value="" placeholder="密码">
+        </div>
+          <fieldset class="ui-grid-a">
+            <div class="ui-block-a"><button type="submit" data-theme="a">登陆</button></div>
+            <div class="ui-block-b"><button type="submit" data-theme="a">重置</button></div>
+          </fieldset>
+    </form>
+</div>
 

@@ -1,5 +1,6 @@
 KeepYourFitServer::Application.routes.draw do
-  resources :sessions
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -50,7 +51,10 @@ KeepYourFitServer::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'sessions#index'
-
+  resources :sessions, :only=>[:index]
+  controller :sessions do
+    get '/register'         => :register,         :as => :register
+  end
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
