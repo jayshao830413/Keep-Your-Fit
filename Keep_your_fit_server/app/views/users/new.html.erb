@@ -1,0 +1,32 @@
+<div data-role="header" data-nobackbtn="true" id="page_title">
+  <h1>Keep Your Fit</h1>
+  <%= link_to "登录", log_in_path, :"data-transition" => "flip" %>
+</div>
+
+<div data-role="content">
+  <%= form_for @user do |f| %>
+    <% if @user.errors.any? %>
+      <ul>
+        <% for message in @user.errors.full_messages %>
+          <li>
+            <%= message %>
+          </li>
+        <% end %>
+      </ul>
+    <% end %>
+    <div data-role="fieldcontain">
+      <%= f.text_field :email, :placeholder => "邮箱" %>
+    </div>
+    <div data-role="fieldcontain">
+      <%= f.password_field :password, :placeholder => "密码" %>
+    </div>
+    <div data-role="fieldcontain">
+      <%= f.password_field :password_confirmation, :placeholder => "再次输入密码" %>
+    </div>
+    <fieldset class="ui-grid-a">
+      <div class="ui-block-a"><%= f.submit "注册", :"data-theme" => "a" %></div>
+      <div class="ui-block-b"><button type="submit" data-theme="a">重置</button></div>
+    </fieldset>
+  <% end %>
+</div> 
+
