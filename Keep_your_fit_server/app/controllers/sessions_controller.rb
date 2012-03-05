@@ -2,10 +2,10 @@ class SessionsController < ApplicationController
   respond_to :json
   
   def create
-    user = User.authenticate(params[:email],params[:password])
+    user = User.authencitate(params[:email],params[:password])
     if user
-      session[:user_id] = user.user_id
-      redirect_to root_url, :notice => "Logged in!"
+      session[:user_id] = user.id
+      redirect_to plans_path, :notice => "Logged in!"
     else
       render "new"
     end
@@ -17,6 +17,6 @@ class SessionsController < ApplicationController
 
   def destroy
     reset_session
-    redirect_to root_url, :notice => "Logged out"
+    redirect_to root_url
   end
 end
